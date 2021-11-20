@@ -10,6 +10,10 @@ And more ...
 - v0.2: Multiple CPUs. Accepts input too
 - v0.3: More commands. Bug fixes
 
+## Scaling
+
+![Scaling](https://raw.githubusercontent.com/SamuraiDangyo/collatzzz/main/10M-0MB-1-16CPU.png)
+
 ## Source code
 
 Maybe later ...
