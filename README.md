@@ -7,7 +7,7 @@ And more ...
 ## Problem
 
 ```
-x        = {1, inf}
+x         = {1, inf}
 x (odd)  -> 3 * x + 1
 x (even) -> 2 / x
 ```
