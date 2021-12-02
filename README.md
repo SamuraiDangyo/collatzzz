@@ -23,7 +23,7 @@ Not mathematically proven yet.
 - v0.1: 1 CPU only
 - v0.2: Multiple CPUs. Accepts input too
 - v0.3: More commands. Bug fixes
-- v0.4: Cosmetics improvements
+- v0.4: Cosmetic improvements
 
 ## Source code
 
