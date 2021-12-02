@@ -4,88 +4,96 @@ A Simple Collatz (bench) program.
 Benching sum of (given) collatz steps.
 And more ...
 
+## Problem
+
+```
+x        -> [1, inf]
+x (odd)  -> 3 * x + 1
+x (even) -> 2 * x
+```
+
+## Theory
+
+Collatz conjecture assumes that:
+Every number collapses to eternal 1 -> 4 -> 2 -> 1 loop.
+Not mathematically proven yet.
+
 ## Versions
 
 - v0.1: 1 CPU only
 - v0.2: Multiple CPUs. Accepts input too
 - v0.3: More commands. Bug fixes
-
-## Scaling
-
-![Scaling](https://raw.githubusercontent.com/SamuraiDangyo/collatzzz/main/10M-0MB-1-16CPU.png)
+- v0.4: Cosmetics improvements
 
 ## Source code
 
 Maybe later ...
 
-## Example: help
+## Example: Help
 
 ```
 > ./collatzzz --help
 
-==============================
 A Simple Collatz (bench) program
 --help         This help
-... [N]        Show sum 0 -> N:th
+--version      Show version
+... [N]        Show sum 0 -> N
 -cores [N]     Set cores
--hash [MB]     Set hash in MB
+-hash [N]      Set hash in N (MB)
 -list [A] [B]  Show list A -> B
 -sum [A] [B]   Show sum A -> B
 -nth [N]       Show N:th Collatz steps
 ```
 
-## Example: nth
+## Example: Nth
 
 ```
-> ./collatzzz -nth 424242424242
+> ./collatzzz -nth 42
 
-... Nth ...
-==============================
-Nth:        354
+Nth:        8
 CPU(s):     16
 Hash(MB):   0
 SPS:        0
 Time(ms):   0
 ```
 
-## Example: list
+## Example: List
 
 ```
-> ./collatzzz -list 2 7
+> ./collatzzz -list 35 42
 
-2: 1
-3: 7
-4: 2
-5: 5
-6: 8
-7: 16
+35: 13
+36: 21
+37: 21
+38: 21
+39: 34
+40: 8
+41: 109
+42: 8
 ```
 
-## Example: sum 1B
+## Example: Sum
 
 ```
 > ./collatzzz -sum 0 1000000000
 
-... Sum ...
-==============================
 Collatz:    0 -> 1,000,000,000
 Sum(steps): 203,234,783,374
 CPU(s):     16
-NPS:        8,867,910,000
-Time(ms):   22,918
+Hash(MB):   0
+SPS:        8,338,521,453
+Time(ms):   24,373
 ```
 
-## Example: bench
+## Example: Bench
 
 ```
 > ./collatzzz
 
-... Bench ...
-==============================
 Collatz:    0 -> 100,000,000
 Sum(steps): 17,923,493,583
 CPU(s):     16
 Hash(MB):   0
-SPS:        5,588,866,100
-Time(ms):   3,207
+SPS:        5,516,618,523
+Time(ms):   3,249
 ```
