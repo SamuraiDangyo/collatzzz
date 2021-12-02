@@ -29,6 +29,10 @@ Not mathematically proven yet.
 
 Maybe later ...
 
+## Scaling
+
+![Scaling](https://raw.githubusercontent.com/SamuraiDangyo/collatzzz/main/10M-0MB-1-16CPU.png)
+
 ## Example: Help
 
 ```
