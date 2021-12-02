@@ -9,7 +9,7 @@ And more ...
 ```
 x         = {1, inf}
 x (odd)  -> 3 * x + 1
-x (even) -> 2 / x
+x (even) -> x / 2
 ```
 
 ## Theory
@@ -33,22 +33,18 @@ Maybe later ...
 
 ![Scaling](https://raw.githubusercontent.com/SamuraiDangyo/collatzzz/main/10M-0MB-1-16CPU.png)
 
-## Example: Help
+## Example: Bench
 
 ```
-> ./collatzzz --help
+> ./collatzzz
 
-A Simple Collatz (bench) program
---help         This help
---version      Show version
-... [N]        Show sum 0 -> N
--cores [N]     Set cores
--hash [N]      Set hash in N (MB)
--list [A] [B]  Show list A -> B
--sum [A] [B]   Show sum A -> B
--nth [N]       Show N:th Collatz steps
+Collatz:    0 -> 100,000,000
+Sum(steps): 17,923,493,583
+CPU(s):     16
+Hash(MB):   0
+SPS:        5,516,618,523
+Time(ms):   3,249
 ```
-
 ## Example: Nth
 
 ```
@@ -89,15 +85,18 @@ SPS:        8,338,521,453
 Time(ms):   24,373
 ```
 
-## Example: Bench
+## Example: Help
 
 ```
-> ./collatzzz
+> ./collatzzz --help
 
-Collatz:    0 -> 100,000,000
-Sum(steps): 17,923,493,583
-CPU(s):     16
-Hash(MB):   0
-SPS:        5,516,618,523
-Time(ms):   3,249
+A Simple Collatz (bench) program
+--help         This help
+--version      Show version
+... [N]        Show sum 0 -> N
+-cores [N]     Set cores
+-hash [N]      Set hash in N (MB)
+-list [A] [B]  Show list A -> B
+-sum [A] [B]   Show sum A -> B
+-nth [N]       Show N:th Collatz steps
 ```
