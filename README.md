@@ -25,6 +25,7 @@ Not mathematically proven yet.
 - v0.2: Multiple CPUs. Accepts input too
 - v0.3: More commands. Bug fixes
 - v0.4: Cosmetic improvements
+- v0.5: More cosmetic improvements
 
 ## Source code
 
