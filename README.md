@@ -1,7 +1,7 @@
 # collatzzz
 
 A Simple Collatz (bench) program.
-Benching sum of (given) collatz steps.
+Benching sum of (given) Collatz steps.
 And more ...
 
 ## Problem
@@ -10,6 +10,7 @@ And more ...
 x         = {1, inf}
 x (odd)  -> 3 * x + 1
 x (even) -> x / 2
+0        -> 1 (special)
 ```
 
 ## Theory
