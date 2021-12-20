@@ -39,7 +39,10 @@ Maybe later ...
 
 ```
 > ./collatzzz
+```
 
+```
+...
 Collatz:    0 -> 100,000,000
 Sum(steps): 17,923,493,583
 CPU(s):     16
@@ -47,13 +50,18 @@ Hash(MB):   0
 SPS:        5,516,618,523
 Time(ms):   3,249
 ```
+
 ## Example: Nth
 
 ```
 > ./collatzzz -nth 42
+```
 
-Nth:        8
-CPU(s):     16
+```
+...
+Nth:        42
+Result:     8
+CPU(s):     3
 Hash(MB):   0
 SPS:        0
 Time(ms):   0
@@ -63,7 +71,9 @@ Time(ms):   0
 
 ```
 > ./collatzzz -list 35 42
+```
 
+```
 35: 13
 36: 21
 37: 21
@@ -78,7 +88,10 @@ Time(ms):   0
 
 ```
 > ./collatzzz -sum 0 1000000000
+```
 
+```
+...
 Collatz:    0 -> 1,000,000,000
 Sum(steps): 203,234,783,374
 CPU(s):     16
@@ -91,13 +104,15 @@ Time(ms):   24,373
 
 ```
 > ./collatzzz --help
+```
 
+```
 A Simple Collatz (bench) program
 --help         This help
 --version      Show version
 ... [N]        Show sum 0 -> N
 -cores [N]     Set cores
--hash [N]      Set hash in N (MB)
+-hash [MB]     Set hash in MB
 -list [A] [B]  Show list A -> B
 -sum [A] [B]   Show sum A -> B
 -nth [N]       Show N:th Collatz steps
