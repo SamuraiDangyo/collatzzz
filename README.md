@@ -38,7 +38,7 @@ Maybe later ...
 ## Example: Bench
 
 ```
-> ./collatzzz
+> ./collatzzz-0.5-x86-linux
 ```
 
 ```
@@ -54,7 +54,7 @@ Time(ms):   3,249
 ## Example: Nth
 
 ```
-> ./collatzzz -nth 42
+> ./collatzzz-0.5-x86-linux -nth 42
 ```
 
 ```
@@ -70,7 +70,7 @@ Time(ms):   0
 ## Example: List
 
 ```
-> ./collatzzz -list 35 42
+> ./collatzzz-0.5-x86-linux -list 35 42
 ```
 
 ```
@@ -87,7 +87,7 @@ Time(ms):   0
 ## Example: Sum
 
 ```
-> ./collatzzz -sum 0 1000000000
+> ./collatzzz-0.5-x86-linux -sum 0 1000000000
 ```
 
 ```
@@ -103,7 +103,7 @@ Time(ms):   24,373
 ## Example: Help
 
 ```
-> ./collatzzz --help
+> ./collatzzz-0.5-x86-linux --help
 ```
 
 ```
